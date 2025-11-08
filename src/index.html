@@ -1,0 +1,228 @@
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Building Construction</title>
+  <script src="https://cdn.tailwindcss.com"></script> 
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between py-4">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-lg bg-blue-600 text-white font-bold flex items-center justify-center">MA</div>
+        <div>
+          <h1 class="font-extrabold text-lg">Munyentwali Augustin</h1>
+          <p class="text-gray-500 text-xs">Building Hope · Building Homes</p>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex gap-6 font-semibold">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#services" class="hover:text-blue-600">Services</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#partnership" class="hover:text-blue-600">Partnership</a>
+        <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden flex items-center text-blue-600 text-3xl">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav id="mobile-menu" class="hidden flex-col bg-white border-t md:hidden">
+      <a href="#about" class="p-3 hover:bg-gray-100">About</a>
+      <a href="#services" class="p-3 hover:bg-gray-100">Services</a>
+      <a href="#projects" class="p-3 hover:bg-gray-100">Projects</a>
+      <a href="#partnership" class="p-3 hover:bg-gray-100">Partnership</a>
+      <a href="#contact" class="p-3 bg-blue-600 text-white text-center">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div class="h-[300px] md:h-[500px] bg-indigo-600/50 flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1758941808762-fe3335a9109b?q=80&w=387&auto=format&fit=crop')] bg-cover bg-center rounded-lg">
+      <h1 class="text-white text-3xl md:text-5xl font-bold text-center px-4">
+        Building Hope · Building Homes
+      </h1>
+    </div>
+    <div>
+      <span class="inline-block bg-blue-50 text-blue-600 px-3 py-1 rounded-full font-semibold text-xs mb-3">Refugee · Builder · Dreamer</span>
+      <h2 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4">
+        From Refugee Roots to Building Futures
+      </h2>
+      <p class="text-gray-600 mb-6">
+        My name is <b>Munyentwali Augustin</b>. Born a refugee, I discovered hope and strength in building.
+        Today, I dedicate my life to <b>constructing safe, beautiful houses</b> that bring dignity and pride to communities.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#partnership" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold">Partner With Me</a>
+        <a href="#projects" class="text-gray-600 font-semibold flex items-center gap-1">See My Work →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-center h-[80vh]">
+    <div class="aspect-video">
+      <iframe class="w-full h-full rounded-lg" 
+        src="https://www.youtube.com/embed/plaQKnOxt5k"
+        title="Nyabiheke Refugee Camp Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <div class="bg-cover bg-center p-6 rounded-lg" style="background-image: url('https://pbs.twimg.com/media/GbOmz4gXMAAEKBh?format=jpg&name=large');">
+      <div class="bg-white/30 p-6 rounded-lg">
+        <h1 class="font-bold text-2xl text-center uppercase text-gray-800 mb-4">Nyabiheke Refugee Camp</h1>
+        <p class="text-gray-800 font-semibold text-sm">
+          I was born in 2005, in a refugee camp. My mother fled while pregnant with me. Growing up, I understood the pain of displacement, but also the power of resilience.
+          Construction is more than work to me—it’s a calling. It means giving families what we lacked: stability, safety, and dignity through <b>good houses</b>.
+          Now, I share my journey with the world: <b>from refugee to builder of hope</b>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold mb-10 text-center">What I Do</h2>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-lg font-bold mb-2">Residential Housing</h3>
+        <p class="text-gray-600">Building safe, modern, and affordable homes that bring comfort and dignity to families.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-lg font-bold mb-2">Community Projects</h3>
+        <p class="text-gray-600">From schools to community centers, I create spaces that strengthen society.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-lg font-bold mb-2">Sustainable Construction</h3>
+        <p class="text-gray-600">Using eco-friendly practices to build for today and protect tomorrow’s generations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="max-w-7xl mx-auto px-16 py-8 col-s">
+    <h2 class="text-3xl font-bold mb-10 text-center">Recent Projects</h2>
+    <div class="grid sm:grid-cols-1 md:grid-cols-3 rows-1 gap-6">
+      <div class="rounded-lg overflow-hidden shadow-lg">
+        <img src="https://images.unsplash.com/photo-1505843513577-22bb7d21e455?q=80&w=800&auto=format&fit=crop"
+             class="h-56 w-full object-cover" alt="House Project">
+        <div class="p-4">
+          <h3 class="font-semibold">Family Homes</h3>
+          <p class="text-gray-500 text-sm">Affordable houses built for displaced families.</p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg">
+         <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop"
+             class="h-56 w-full object-cover" alt="Apartments">
+       <div class="p-4">
+          <h3 class="font-semibold">Community Housing</h3>
+          <p class="text-gray-500 text-sm"> Apartments designed to unite people in safety and dignity.</p>
+        </div>
+     </div>
+      <div class="rounded-lg overflow-hidden shadow-lg">
+         <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?q=80&w=800&auto=format&fit=crop"
+             class="h-56 w-full object-cover" alt="School Project">
+          <div class="p-4"><h3 class="font-semibold">School Construction</h3>
+            <p class="text-gray-500 text-sm">Education spaces built for refugee and local children.</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERSHIP -->
+  <section id="partnership" class="bg-blue-50 py-16 text-center px-6">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Partnerships & Collaborations</h2>
+      <p class="text-gray-600 mb-6">
+        I invite NGOs, investors, and individuals to partner with me. Together, we can
+        <b>construct houses</b> that restore dignity to refugees and communities.
+      </p>
+      <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold">Become a Partner</a>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+<section id="contact" class="max-w-7xl mx-auto px-6 py-16">
+  <h2 class="text-3xl font-bold mb-6 text-center">Get In Touch</h2>
+  
+  <form id="contact-form" class="max-w-3xl mx-auto grid md:grid-cols-2 gap-6 bg-white p-8 rounded-lg shadow">
+    <input type="text" placeholder="Your Name" class="border p-3 rounded w-full" required>
+    <input type="email" placeholder="Your Email" class="border p-3 rounded w-full" required>
+    <textarea placeholder="Your Message" class="md:col-span-2 border p-3 rounded w-full h-32" required></textarea>
+    <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold md:col-span-2 hover:bg-blue-700 transition">
+      Send Message
+    </button>
+  </form>
+
+  <!-- Submission Feedback (Tailwind styled) -->
+  <div id="submission-msg" 
+       class="hidden mt-4 max-w-3xl mx-auto flex items-center gap-2 justify-center bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg font-semibold">
+    ✅ Submitted!
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('contact-form');
+  const msg = document.getElementById('submission-msg');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault(); // prevent page refresh
+    msg.classList.remove('hidden'); // show message
+    form.reset(); // clear form fields
+
+    // Optional: hide after 3 seconds
+    setTimeout(() => {
+      msg.classList.add('hidden');
+    }, 3000);
+  });
+</script>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-400 py-10">
+    <div class="max-w-7xl mx-auto px-6 grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-white font-bold mb-3">Munyentwali Augustin</h3>
+        <p class="text-sm">From refugee to builder — dedicated to constructing homes that bring hope and dignity.</p>
+      </div>
+      <div>
+        <h3 class="text-white font-bold mb-3">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#about" class="hover:text-white">About</a></li>
+          <li><a href="#services" class="hover:text-white">Services</a></li>
+          <li><a href="#projects" class="hover:text-white">Projects</a></li>
+          <li><a href="#partnership" class="hover:text-white">Partnership</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white font-bold mb-3">Contact</h3>
+        <p class="text-sm">Email: eagleaust456@gmail.com</p>
+        <p class="text-sm">Phone: +250 794 922 986</p>
+      </div>
+    </div>
+    <div class="text-center text-xs text-gray-500 mt-6">
+      © 2025 Munyentwali Augustin. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
